@@ -5,6 +5,8 @@ import os
 import cloudinary
 from cloudinary.uploader import upload
 from flask.json import jsonify
+from routes.auth_routes import auth_routes
+from routes.report_routes import report_routes
 
 
 load_dotenv()
@@ -34,7 +36,8 @@ def index():
     return "<h1>Hello World</h1>"
 
 
-
+app.register_blueprint(auth_routes)
+app.register_blueprint(report_routes)
 
 # runs the server on port 5000
 if __name__ == "__main__":
