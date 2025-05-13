@@ -5,6 +5,7 @@ import os
 import cloudinary
 from cloudinary.uploader import upload
 from flask.json import jsonify
+from models.style_transfer import AdaIN
 
 load_dotenv()
 
