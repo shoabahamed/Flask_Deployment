@@ -8,7 +8,6 @@ from flask.json import jsonify
 from routes.auth_routes import auth_routes
 from routes.report_routes import report_routes
 
-
 load_dotenv()
 
 
