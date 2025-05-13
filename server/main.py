@@ -35,8 +35,8 @@ def index():
     return "<h1>Hello World</h1>"
 
 
-# app.register_blueprint(auth_routes)
-# app.register_blueprint(report_routes)
+app.register_blueprint(auth_routes)
+app.register_blueprint(report_routes)
 
 # runs the server on port 5000
 if __name__ == "__main__":
